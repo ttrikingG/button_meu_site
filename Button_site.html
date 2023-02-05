@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Button_horizontal</title>
+</head>
+<style>
+    @keyframes anima-key {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+}
+}
+    nav{/*menu principal horizontal(cada botão é independente)*/
+        margin-top: 1%;
+        text-align: center;
+    }
+        .btn1{
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+            height: 50px;
+            box-shadow: 5px 5px 10px #000;
+        }
+
+        .btn1:hover{/*BOTÃO 1*/
+            transform: scale(1.03);
+            background-color: rgb(255, 8, 0) ;
+        }
+        
+        .btn1:active{
+            background-color: rgb(255, 255, 255) ;
+            color:rgb(255, 8, 0);
+        } 
+
+        .n1{
+            text-decoration: none;
+            font-family:HIROMISAKE;
+            font-size: larger;
+            color:rgb(0, 0, 0);
+        }
+
+        .n1:hover{
+            transform:scale(1.5);
+            display:grid;
+        }
+
+        .btn2{/*BOTÃO 2*/
+            background-image: linear-gradient(to right,rgb(250, 101, 225), rgb(255, 0, 242), rgb(119, 0, 255));
+            background-size: 500% 100%;
+            animation: anima-key 1s infinite alternate;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+            height: 50px;
+            box-shadow: 5px 5px 10px #000;
+        }
+
+        .btn2:hover{
+            transform: scale(1.03);
+        }
+        
+        .btn2:active{
+            background-image:none;
+        } 
+
+        .n2{
+            text-decoration: none;
+            font-family:HIROMISAKE;
+            font-size: larger;
+            color:rgb(255, 255, 255);
+        }
+
+        .n2:hover{
+            transform:scale(1.5);
+            display:grid;
+        }
+</style>
+<body>
+    <nav>
+        <button class="btn1"><a class="n1" href="#">Home/Início</a></button>
+        <button class="btn2"><a class="n2" href="#">Contact-me</a></button>        
+    </nav>
+</body>
+</html>
